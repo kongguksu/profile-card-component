@@ -1,0 +1,19 @@
+@media (max-width: 25em) {
+  .profile-card-container {
+    width: 20rem;
+  }
+
+  .bio-headshot {
+    top: 43%;
+  }
+}
+
+@media (max-width: 18em) {
+  .profile-card-container {
+    width: 15rem;
+  }
+
+  .bio-headshot {
+    top: 37%;
+  }
+}

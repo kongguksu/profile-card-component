@@ -1,0 +1,180 @@
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+
+- FONT SIZES (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100%;
+  overflow: hidden;
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.12rem;
+  color: hsl(229, 23%, 23%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: hsl(185, 75%, 39%);
+}
+
+main {
+  position: relative;
+}
+
+.profile-card-container {
+  position: relative;
+
+  width: 22rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+}
+
+/* Background */
+.bg-top {
+  position: absolute;
+  top: -185%;
+  left: -235%;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: -217%;
+  right: -220%;
+}
+
+/* Card Background */
+.card-background {
+  width: 100%;
+
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+/* Bio */
+.text-bio {
+  border-bottom: 1px solid hsl(0, 0%, 89%);
+  padding-bottom: 1.5rem;
+}
+
+.bio-headshot {
+  position: absolute;
+  top: 44.8%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+
+  width: 6.6rem;
+  height: 6.6rem;
+
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.bio-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  margin-top: 4.2rem;
+}
+
+.name {
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.age {
+  display: inline-block;
+  color: hsl(0, 0%, 59%);
+}
+
+.bio-location {
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 59%);
+  text-align: center;
+
+  margin-top: 0.5rem;
+}
+
+/* Stat */
+.text-stat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 1.7rem 0 1.7rem;
+  padding: 1.5rem 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.stat-number {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.stat-title {
+  font-size: 0.6rem;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 1.6px;
+}
+
+/* Attribution */
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
